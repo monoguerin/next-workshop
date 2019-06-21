@@ -10,6 +10,8 @@ app.prepare()
   .then(() => {
     const server = express();
 
+    server.get('/test', (req, res) => res.send('TEST'));
+
     server.get('*', (req, res) => handle(req, res));
 
     server.listen(port, (err) => {
