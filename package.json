@@ -4,9 +4,9 @@
   "description": "This is an example next project from scratch",
   "main": "index.js",
   "scripts": {
-    "dev": "node server",
+    "dev": "NODE_ENV=development node server",
     "build": "next build",
-    "start": "NODE_ENV=production node server",
+    "start": "node server",
     "heroku-postbuild": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
